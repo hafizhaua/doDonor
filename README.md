@@ -6,4 +6,3 @@ Ketua Kelompok: Hafizha Ulinnuha Ahmad - 20/456365/TK/50495
 Anggota 1: Nindya Fathul Risya - 20/460556/TK/51145
 Anggota 2: Anisya Mahira Salienka - 20/463593/TK/51585
 
-![image](https://user-images.githubusercontent.com/79150872/189830426-40f0e95e-d0d8-4749-9b87-ab84cd944c02.png)
