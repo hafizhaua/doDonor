@@ -30,10 +30,21 @@ namespace doDonor.Models
             get { return _username; }
             set { _username = value; }
         }
+
         public string? Password
         {
             get { return _password; }
             set { _password = value; }
+        }
+
+        public bool login(string username, string password)
+        {
+            return true;
+        }
+
+        public bool logout()
+        {
+            return true;
         }
     }
 }
