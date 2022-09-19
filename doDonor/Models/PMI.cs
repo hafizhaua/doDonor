@@ -34,5 +34,11 @@ namespace doDonor.Models
         public string? PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public List<string>? ScheduleList { get => scheduleList; set => scheduleList = value; }
         public List<string>? BloodStockList { get => bloodStockList; set => bloodStockList = value; }
+
+        public void setProfile() { }
+
+        public void addSchedule() { }
+
+        public void setBloodStock() { }
     }
 }

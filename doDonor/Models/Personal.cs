@@ -37,5 +37,11 @@ namespace doDonor.Models
         public string? PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public List<string>? DonorRequest { get => donorRequest; set => donorRequest = value; }
         public List<string>? DonoringList { get => donoringList; set => donoringList = value; }
+
+        public void requestDonor() { }
+
+        public void commitDonor() { }
+
+        public void setProfile() { }
     }
 }
