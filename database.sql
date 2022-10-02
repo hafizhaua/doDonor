@@ -1,3 +1,22 @@
+CREATE TABLE dodonor_user(
+	idUser SERIAL NOT NULL PRIMARY KEY,
+	username VARCHAR(24) NOT NULL,
+	pw VARCHAR(24) NOT NULL
+);
+
+SELECT * FROM dodonor_user;
+
+CREATE TABLE doDonor_personal(
+	idPersonal SERIAL NOT NULL PRIMARY KEY,
+	idUser int REFERENCES doDonor_user,
+	nama VARCHAR(255) NOT NULL,
+	bloodType VARCHAR(5) NOT NULL,
+	region VARCHAR(255) NOT NULL,
+	phoneNumber VARCHAR(12) NOT NULL
+);
+
+SELECT * FROM dodonor_personal;
+
 CREATE TABLE PMI(
 	idPMI SERIAL NOT NULL PRIMARY KEY,
 	idUser INT REFERENCES doDonor_user NOT NULL,
