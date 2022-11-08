@@ -1,4 +1,5 @@
-﻿using System;
+﻿using doDonor.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,13 +33,20 @@ namespace doDonor
 
         }
 
+        public static Boolean isAdmin = false;
+
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            if(textBox2.Text == "Admin" & textBox1.Text =="Admin")
+            Admin user = new Admin(tbUname.Text, tbPassword.Text);
+
+            if(user.login())
             {
-                this.Hide();
+                isAdmin = true;
+                MessageBox.Show("Berhasil login sebagai admin.", "Sukses");
+                Hide();
                 FormBeranda formBeranda = new FormBeranda();
+
                 formBeranda.Show();
 
             }
@@ -47,6 +55,11 @@ namespace doDonor
                 MessageBox.Show("Login Gagal");
             }
  
-    }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

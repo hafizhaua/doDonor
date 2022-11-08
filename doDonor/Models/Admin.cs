@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace doDonor.Models
 {
-    internal class PMI : User
+    internal class Admin : User
     {
         private string? name;
         private string? region;
@@ -15,17 +15,17 @@ namespace doDonor.Models
         private List<string>? scheduleList;
         private List<string>? bloodStockList;
 
-        public PMI(int id, string? username, string? password, string? name, string? region, string? address, string? phoneNumber, List<string>? scheduleList, List<string>? bloodStockList) : base(id, username, password)
+        public Admin(string? username, string? password) : base(username, password)
         {
-            UserID = id;
+            //UserID = id;
             Username = username;
             Password = password;
-            Name = name;
-            Region = region;
-            Address = address;
-            PhoneNumber = phoneNumber;
-            ScheduleList = scheduleList;
-            BloodStockList = bloodStockList;
+            //Name = name;
+            //Region = region;
+            //Address = address;
+            //PhoneNumber = phoneNumber;
+            //ScheduleList = scheduleList;
+            //BloodStockList = bloodStockList;
         }
 
         public string? Name { get => name; set => name = value; }
@@ -40,5 +40,11 @@ namespace doDonor.Models
         public void addSchedule() { }
 
         public void setBloodStock() { }
+
+        public override bool login()
+        {
+            DbUser dbAuth = new DbUser();
+            return dbAuth.AdminLogin(Username, Password);
+        }
     }
 }

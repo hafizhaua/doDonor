@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace doDonor.Models
 {
-    internal class Personal : User
+    internal class Guest : User
     {
         private string? name;
         private string? bloodType;
@@ -16,7 +16,7 @@ namespace doDonor.Models
         private List<string>? donorRequest;
         private List<string>? donoringList;
 
-        public Personal(int id, string? username, string? password, string? name, string? bloodType, string? rhesus, string? region, string? phoneNumber, List<string>? donorRequest, List<string>? donoringList) : base(id, username, password)
+        public Guest(int id, string? username, string? password, string? name, string? bloodType, string? rhesus, string? region, string? phoneNumber, List<string>? donorRequest, List<string>? donoringList) : base(username, password)
         {
             UserID = id;
             Username = username;
@@ -43,5 +43,10 @@ namespace doDonor.Models
         public void commitDonor() { }
 
         public void setProfile() { }
+
+        public override bool login(string username, string password)
+        {
+            return true;
+        }
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbRegion = new System.Windows.Forms.ComboBox();
             this.cbBloodType = new System.Windows.Forms.ComboBox();
@@ -41,6 +41,10 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tbName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonorReq)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(234, 37);
+            this.label1.Location = new System.Drawing.Point(227, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 28);
             this.label1.TabIndex = 0;
@@ -574,12 +578,12 @@
             "Yahukimo",
             "Yalimo",
             "Yogyakarta"});
-            this.cbRegion.Location = new System.Drawing.Point(210, 124);
+            this.cbRegion.Location = new System.Drawing.Point(456, 117);
             this.cbRegion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbRegion.Name = "cbRegion";
-            this.cbRegion.Size = new System.Drawing.Size(252, 28);
+            this.cbRegion.Size = new System.Drawing.Size(184, 28);
             this.cbRegion.TabIndex = 3;
-            this.cbRegion.Text = "Kota/Kabupaten";
+            this.cbRegion.Text = "Semua";
             // 
             // cbBloodType
             // 
@@ -594,12 +598,12 @@
             "AB-",
             "O+",
             "O-"});
-            this.cbBloodType.Location = new System.Drawing.Point(210, 77);
+            this.cbBloodType.Location = new System.Drawing.Point(456, 76);
             this.cbBloodType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbBloodType.Name = "cbBloodType";
-            this.cbBloodType.Size = new System.Drawing.Size(252, 28);
+            this.cbBloodType.Size = new System.Drawing.Size(184, 28);
             this.cbBloodType.TabIndex = 1;
-            this.cbBloodType.Text = "Golongan Darah";
+            this.cbBloodType.Text = "Semua";
             // 
             // btnSearch
             // 
@@ -612,40 +616,39 @@
             this.btnSearch.FillColor2 = System.Drawing.Color.IndianRed;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(209, 175);
+            this.btnSearch.Location = new System.Drawing.Point(205, 175);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(253, 51);
             this.btnSearch.TabIndex = 24;
-            this.btnSearch.Text = "CARI";
+            this.btnSearch.Text = "Cari";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvDonorReq
             // 
             this.dgvDonorReq.AllowUserToAddRows = false;
             this.dgvDonorReq.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvDonorReq.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgvDonorReq.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvDonorReq.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDonorReq.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDonorReq.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvDonorReq.ColumnHeadersHeight = 50;
             this.dgvDonorReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDonorReq.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvDonorReq.Enabled = false;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDonorReq.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvDonorReq.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDonorReq.Location = new System.Drawing.Point(32, 251);
             this.dgvDonorReq.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -653,7 +656,7 @@
             this.dgvDonorReq.RowHeadersVisible = false;
             this.dgvDonorReq.RowHeadersWidth = 51;
             this.dgvDonorReq.RowTemplate.Height = 25;
-            this.dgvDonorReq.Size = new System.Drawing.Size(622, 262);
+            this.dgvDonorReq.Size = new System.Drawing.Size(609, 262);
             this.dgvDonorReq.TabIndex = 25;
             this.dgvDonorReq.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDonorReq.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -690,12 +693,53 @@
             // 
             this.guna2Elipse4.TargetControl = this.cbRegion;
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(313, 76);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(112, 22);
+            this.guna2HtmlLabel1.TabIndex = 26;
+            this.guna2HtmlLabel1.Text = "Golongan Darah";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(313, 123);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(112, 22);
+            this.guna2HtmlLabel2.TabIndex = 27;
+            this.guna2HtmlLabel2.Text = "Kota/Kabupaten";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(46, 89);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(111, 22);
+            this.guna2HtmlLabel3.TabIndex = 28;
+            this.guna2HtmlLabel3.Text = "Nama Pendonor";
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(46, 117);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(209, 27);
+            this.tbName.TabIndex = 31;
+            // 
             // FormCari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(685, 548);
+            this.ClientSize = new System.Drawing.Size(676, 548);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.dgvDonorReq);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cbRegion);
@@ -716,11 +760,15 @@
         private Label label1;
         private ComboBox cbRegion;
         private ComboBox cbBloodType;
-        private Guna.UI2.WinForms.Guna2GradientButton btnSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDonorReq;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private TextBox tbName;
+        private Guna.UI2.WinForms.Guna2GradientButton btnSearch;
     }
 }

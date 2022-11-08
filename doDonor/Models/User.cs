@@ -12,9 +12,8 @@ namespace doDonor.Models
         protected string? _username;
         protected string? _password;
 
-        public User(int id, string? username, string? password)
+        public User( string? username, string? password)
         {
-            UserID = id;
             Username = username;
             Password = password;
         }
@@ -37,7 +36,12 @@ namespace doDonor.Models
             set { _password = value; }
         }
 
-        public bool login(string username, string password)
+        public virtual bool login(string username, string password)
+        {
+            return true;
+        }
+
+        public virtual bool login()
         {
             return true;
         }

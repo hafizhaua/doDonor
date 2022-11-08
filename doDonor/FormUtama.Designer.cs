@@ -99,7 +99,7 @@
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.Size = new System.Drawing.Size(269, 38);
             this.guna2GradientButton2.TabIndex = 1;
-            this.guna2GradientButton2.Text = "LOGIN AS ADMIN";
+            this.guna2GradientButton2.Text = "Login Admin";
             this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton1
@@ -117,12 +117,12 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(269, 38);
             this.guna2GradientButton1.TabIndex = 0;
-            this.guna2GradientButton1.Text = "LOGIN AS USER";
+            this.guna2GradientButton1.Text = "Login Pengunjung";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // FormUtama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.guna2Panel1);
