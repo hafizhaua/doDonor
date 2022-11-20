@@ -13,8 +13,10 @@ namespace doDonor
 {
     public partial class FormLogin : Form
     {
-        public FormLogin()
+        private FormUtama formUtama;
+        public FormLogin(FormUtama mainForm)
         {
+            formUtama = mainForm;
             InitializeComponent();
         }
 
@@ -45,6 +47,7 @@ namespace doDonor
                 isAdmin = true;
                 MessageBox.Show("Berhasil login sebagai admin.", "Sukses");
                 Hide();
+                formUtama.Hide();
                 FormBeranda formBeranda = new FormBeranda();
 
                 formBeranda.Show();

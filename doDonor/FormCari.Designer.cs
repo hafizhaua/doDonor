@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbRegion = new System.Windows.Forms.ComboBox();
             this.cbBloodType = new System.Windows.Forms.ComboBox();
@@ -80,13 +80,12 @@
             "Ambon",
             "Asahan",
             "Asmat",
-            "B A T A M",
+            "Batam",
             "Badung",
             "Balangan",
             "Balikpapan",
             "Banda Aceh",
             "Bandar Lampung",
-            "Bandung",
             "Bandung",
             "Bandung Barat",
             "Banggai",
@@ -98,7 +97,6 @@
             "Bangka Tengah",
             "Bangkalan",
             "Bangli",
-            "Banjar",
             "Banjar",
             "Banjar Baru",
             "Banjarmasin",
@@ -120,7 +118,6 @@
             "Batu Bara",
             "Baubau",
             "Bekasi",
-            "Bekasi",
             "Belitung",
             "Belitung Timur",
             "Belu",
@@ -134,16 +131,13 @@
             "Berau",
             "Biak Numfor",
             "Bima",
-            "Bima",
             "Binjai",
             "Bintan",
             "Bireuen",
             "Bitung",
             "Blitar",
-            "Blitar",
             "Blora",
             "Boalemo",
-            "Bogor",
             "Bogor",
             "Bojonegoro",
             "Bolaang Mongondow",
@@ -176,8 +170,7 @@
             "Cilegon",
             "Cimahi",
             "Cirebon",
-            "Cirebon",
-            "D U M A I",
+            "Dumai",
             "Dairi",
             "Deiyai",
             "Deli Serdang",
@@ -196,7 +189,6 @@
             "Garut",
             "Gayo Lues",
             "Gianyar",
-            "Gorontalo",
             "Gorontalo",
             "Gorontalo Utara",
             "Gowa",
@@ -225,7 +217,6 @@
             "Jakarta Utara",
             "Jambi",
             "Jayapura",
-            "Jayapura",
             "Jayawijaya",
             "Jember",
             "Jembrana",
@@ -245,7 +236,6 @@
             "Kaur",
             "Kayong Utara",
             "Kebumen",
-            "Kediri",
             "Kediri",
             "Keerom",
             "Kendal",
@@ -281,7 +271,6 @@
             "Kulon Progo",
             "Kuningan",
             "Kupang",
-            "Kupang",
             "Kutai Barat",
             "Kutai Kartanegara",
             "Kutai Timur",
@@ -316,8 +305,6 @@
             "Luwu Timur",
             "Luwu Utara",
             "Madiun",
-            "Madiun",
-            "Magelang",
             "Magelang",
             "Magetan",
             "Mahakam Hulu",
@@ -325,7 +312,6 @@
             "Majene",
             "Makassar",
             "Malaka",
-            "Malang",
             "Malang",
             "Malinau",
             "Maluku Barat Daya",
@@ -361,7 +347,6 @@
             "Minahasa Selatan",
             "Minahasa Tenggara",
             "Minahasa Utara",
-            "Mojokerto",
             "Mojokerto",
             "Morowali",
             "Morowali Utara",
@@ -418,12 +403,10 @@
             "Pasaman Barat",
             "Paser",
             "Pasuruan",
-            "Pasuruan",
             "Pati",
             "Payakumbuh",
             "Pegunungan Arfak",
             "Pegunungan Bintang",
-            "Pekalongan",
             "Pekalongan",
             "Pekanbaru",
             "Pelalawan",
@@ -445,7 +428,6 @@
             "Prabumulih",
             "Pringsewu",
             "Probolinggo",
-            "Probolinggo",
             "Pulang Pisau",
             "Pulau Morotai",
             "Pulau Taliabu",
@@ -460,7 +442,7 @@
             "Rokan Hilir",
             "Rokan Hulu",
             "Rote Ndao",
-            "S I A K",
+            "Siak",
             "Sabang",
             "Sabu Raijua",
             "Salatiga",
@@ -475,10 +457,8 @@
             "Sekadau",
             "Seluma",
             "Semarang",
-            "Semarang",
             "Seram Bagian Barat",
             "Seram Bagian Timur",
-            "Serang",
             "Serang",
             "Serdang Bedagai",
             "Seruyan",
@@ -497,16 +477,13 @@
             "Situbondo",
             "Sleman",
             "Solok",
-            "Solok",
             "Solok Selatan",
             "Soppeng",
-            "Sorong",
             "Sorong",
             "Sorong Selatan",
             "Sragen",
             "Subang",
             "Subulussalam",
-            "Sukabumi",
             "Sukabumi",
             "Sukamara",
             "Sukoharjo",
@@ -532,7 +509,6 @@
             "Tanah Datar",
             "Tanah Laut",
             "Tangerang",
-            "Tangerang",
             "Tangerang Selatan",
             "Tanggamus",
             "Tanjung Balai",
@@ -545,10 +521,8 @@
             "Tapin",
             "Tarakan",
             "Tasikmalaya",
-            "Tasikmalaya",
             "Tebing Tinggi",
             "Tebo",
-            "Tegal",
             "Tegal",
             "Teluk Bintuni",
             "Teluk Wondama",
@@ -628,27 +602,27 @@
             // 
             this.dgvDonorReq.AllowUserToAddRows = false;
             this.dgvDonorReq.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgvDonorReq.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvDonorReq.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDonorReq.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDonorReq.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDonorReq.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDonorReq.ColumnHeadersHeight = 50;
             this.dgvDonorReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDonorReq.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDonorReq.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDonorReq.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDonorReq.Location = new System.Drawing.Point(32, 251);
             this.dgvDonorReq.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

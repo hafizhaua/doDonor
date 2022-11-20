@@ -20,7 +20,8 @@ namespace doDonor
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            FormLogin formLogin = new FormLogin();
+            //this.Hide();
+            FormLogin formLogin = new FormLogin(this);
             formLogin.TopLevel = false;
             panel1.Controls.Add(formLogin);
             formLogin.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -33,7 +34,6 @@ namespace doDonor
             this.Hide();
             FormBeranda formBeranda = new FormBeranda();
             formBeranda.Show();
-
         }
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
