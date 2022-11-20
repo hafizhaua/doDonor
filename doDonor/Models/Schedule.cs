@@ -9,23 +9,23 @@ namespace doDonor.Models
     internal class Schedule
     {
         private int idSchedule;
-        private int idPMI;
-        private DateTime dateTime;
+        private string? region;
+        private DateTime dateEvent;
         private string? location;
         private string? address;
 
-        public Schedule(int idSchedule, int idPMI, DateTime dateTime, string? location, string? address)
+        public Schedule(int idSchedule, string? region, DateTime dateEvent, string? location, string? address)
         {
             IdSchedule = idSchedule;
-            IdPMI = idPMI;
-            DateTime = dateTime;
+            Region = region;
+            DateEvent = dateEvent;
             Location = location;
             Address = address;
         }
 
         public int IdSchedule { get => idSchedule; set => idSchedule = value; }
-        public int IdPMI { get => idPMI; set => idPMI = value; }
-        public DateTime DateTime { get => dateTime; set => dateTime = value; }
+        public string? Region { get => region; set => region = value; }
+        public DateTime DateEvent { get => dateEvent; set => dateEvent = value; }
         public string? Location { get => location; set => location = value; }
         public string? Address { get => address; set => address = value; }
     }

@@ -54,12 +54,12 @@ namespace doDonor
         private void button4_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            FormJadwal formJadwal = new FormJadwal();
-            formJadwal.TopLevel = false;
-            panel2.Controls.Add(formJadwal);
-            formJadwal.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            formJadwal.Dock = DockStyle.Fill;
-            formJadwal.Show();
+            FormJadwalPMI formJadwalPMI = new FormJadwalPMI();
+            //formJadwalPMI.TopLevel = false;
+            //panel2.Controls.Add(formJadwalPMI);
+            //formJadwalPMI.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //formJadwalPMI.Dock = DockStyle.Fill;
+            formJadwalPMI.Show();
         }
     }
 }
