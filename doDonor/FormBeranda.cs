@@ -5,6 +5,8 @@ namespace doDonor
         public FormBeranda()
         {
             InitializeComponent();
+            if (!FormLogin.isAdmin)
+                btnLogout.Text = "Login";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -60,6 +62,30 @@ namespace doDonor
             //formJadwalPMI.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             //formJadwalPMI.Dock = DockStyle.Fill;
             formJadwalPMI.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            FormLogin.isAdmin = false;
+            Hide();
+            FormUtama formUtama = new FormUtama();
+            formUtama.Show();
+            Close();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

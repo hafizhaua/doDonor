@@ -57,13 +57,14 @@
             this.guna2Elipse8 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse9 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.tbBagQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.tbBagQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 39);
+            this.label1.Location = new System.Drawing.Point(25, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 0;
@@ -72,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 121);
+            this.label2.Location = new System.Drawing.Point(25, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 20);
             this.label2.TabIndex = 1;
@@ -81,7 +82,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 247);
+            this.label3.Location = new System.Drawing.Point(25, 284);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 20);
             this.label3.TabIndex = 2;
@@ -90,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 333);
+            this.label4.Location = new System.Drawing.Point(25, 370);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 3;
@@ -99,7 +100,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(361, 39);
+            this.label5.Location = new System.Drawing.Point(361, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 20);
             this.label5.TabIndex = 4;
@@ -108,7 +109,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(361, 121);
+            this.label6.Location = new System.Drawing.Point(361, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 20);
             this.label6.TabIndex = 5;
@@ -117,7 +118,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(361, 209);
+            this.label7.Location = new System.Drawing.Point(361, 246);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 20);
             this.label7.TabIndex = 6;
@@ -126,7 +127,7 @@
             // tbPatientName
             // 
             this.tbPatientName.BackColor = System.Drawing.SystemColors.Window;
-            this.tbPatientName.Location = new System.Drawing.Point(25, 64);
+            this.tbPatientName.Location = new System.Drawing.Point(25, 101);
             this.tbPatientName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbPatientName.Name = "tbPatientName";
             this.tbPatientName.Size = new System.Drawing.Size(275, 27);
@@ -134,7 +135,7 @@
             // 
             // tbHospitalName
             // 
-            this.tbHospitalName.Location = new System.Drawing.Point(361, 151);
+            this.tbHospitalName.Location = new System.Drawing.Point(361, 188);
             this.tbHospitalName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbHospitalName.Name = "tbHospitalName";
             this.tbHospitalName.Size = new System.Drawing.Size(275, 27);
@@ -142,7 +143,7 @@
             // 
             // tbCpName
             // 
-            this.tbCpName.Location = new System.Drawing.Point(363, 239);
+            this.tbCpName.Location = new System.Drawing.Point(363, 276);
             this.tbCpName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCpName.Name = "tbCpName";
             this.tbCpName.Size = new System.Drawing.Size(275, 27);
@@ -150,7 +151,7 @@
             // 
             // tbCpPhoneNumber
             // 
-            this.tbCpPhoneNumber.Location = new System.Drawing.Point(363, 328);
+            this.tbCpPhoneNumber.Location = new System.Drawing.Point(363, 365);
             this.tbCpPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCpPhoneNumber.Name = "tbCpPhoneNumber";
             this.tbCpPhoneNumber.Size = new System.Drawing.Size(275, 27);
@@ -159,7 +160,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(363, 296);
+            this.label9.Location = new System.Drawing.Point(363, 333);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(142, 20);
             this.label9.TabIndex = 15;
@@ -174,7 +175,7 @@
             "B",
             "AB",
             "O"});
-            this.cbBloodType.Location = new System.Drawing.Point(25, 151);
+            this.cbBloodType.Location = new System.Drawing.Point(25, 188);
             this.cbBloodType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbBloodType.Name = "cbBloodType";
             this.cbBloodType.Size = new System.Drawing.Size(275, 28);
@@ -188,7 +189,7 @@
             "WB",
             "TC",
             "PRC"});
-            this.cbDonorType.Location = new System.Drawing.Point(25, 365);
+            this.cbDonorType.Location = new System.Drawing.Point(25, 402);
             this.cbDonorType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbDonorType.Name = "cbDonorType";
             this.cbDonorType.Size = new System.Drawing.Size(275, 28);
@@ -215,13 +216,12 @@
             "Ambon",
             "Asahan",
             "Asmat",
-            "B A T A M",
+            "Batam",
             "Badung",
             "Balangan",
             "Balikpapan",
             "Banda Aceh",
             "Bandar Lampung",
-            "Bandung",
             "Bandung",
             "Bandung Barat",
             "Banggai",
@@ -233,7 +233,6 @@
             "Bangka Tengah",
             "Bangkalan",
             "Bangli",
-            "Banjar",
             "Banjar",
             "Banjar Baru",
             "Banjarmasin",
@@ -255,7 +254,6 @@
             "Batu Bara",
             "Baubau",
             "Bekasi",
-            "Bekasi",
             "Belitung",
             "Belitung Timur",
             "Belu",
@@ -269,16 +267,13 @@
             "Berau",
             "Biak Numfor",
             "Bima",
-            "Bima",
             "Binjai",
             "Bintan",
             "Bireuen",
             "Bitung",
             "Blitar",
-            "Blitar",
             "Blora",
             "Boalemo",
-            "Bogor",
             "Bogor",
             "Bojonegoro",
             "Bolaang Mongondow",
@@ -311,8 +306,7 @@
             "Cilegon",
             "Cimahi",
             "Cirebon",
-            "Cirebon",
-            "D U M A I",
+            "Dumai",
             "Dairi",
             "Deiyai",
             "Deli Serdang",
@@ -331,7 +325,6 @@
             "Garut",
             "Gayo Lues",
             "Gianyar",
-            "Gorontalo",
             "Gorontalo",
             "Gorontalo Utara",
             "Gowa",
@@ -360,7 +353,6 @@
             "Jakarta Utara",
             "Jambi",
             "Jayapura",
-            "Jayapura",
             "Jayawijaya",
             "Jember",
             "Jembrana",
@@ -380,7 +372,6 @@
             "Kaur",
             "Kayong Utara",
             "Kebumen",
-            "Kediri",
             "Kediri",
             "Keerom",
             "Kendal",
@@ -416,7 +407,6 @@
             "Kulon Progo",
             "Kuningan",
             "Kupang",
-            "Kupang",
             "Kutai Barat",
             "Kutai Kartanegara",
             "Kutai Timur",
@@ -451,8 +441,6 @@
             "Luwu Timur",
             "Luwu Utara",
             "Madiun",
-            "Madiun",
-            "Magelang",
             "Magelang",
             "Magetan",
             "Mahakam Hulu",
@@ -460,7 +448,6 @@
             "Majene",
             "Makassar",
             "Malaka",
-            "Malang",
             "Malang",
             "Malinau",
             "Maluku Barat Daya",
@@ -496,7 +483,6 @@
             "Minahasa Selatan",
             "Minahasa Tenggara",
             "Minahasa Utara",
-            "Mojokerto",
             "Mojokerto",
             "Morowali",
             "Morowali Utara",
@@ -553,12 +539,10 @@
             "Pasaman Barat",
             "Paser",
             "Pasuruan",
-            "Pasuruan",
             "Pati",
             "Payakumbuh",
             "Pegunungan Arfak",
             "Pegunungan Bintang",
-            "Pekalongan",
             "Pekalongan",
             "Pekanbaru",
             "Pelalawan",
@@ -580,7 +564,6 @@
             "Prabumulih",
             "Pringsewu",
             "Probolinggo",
-            "Probolinggo",
             "Pulang Pisau",
             "Pulau Morotai",
             "Pulau Taliabu",
@@ -595,7 +578,7 @@
             "Rokan Hilir",
             "Rokan Hulu",
             "Rote Ndao",
-            "S I A K",
+            "Siak",
             "Sabang",
             "Sabu Raijua",
             "Salatiga",
@@ -610,10 +593,8 @@
             "Sekadau",
             "Seluma",
             "Semarang",
-            "Semarang",
             "Seram Bagian Barat",
             "Seram Bagian Timur",
-            "Serang",
             "Serang",
             "Serdang Bedagai",
             "Seruyan",
@@ -632,16 +613,13 @@
             "Situbondo",
             "Sleman",
             "Solok",
-            "Solok",
             "Solok Selatan",
             "Soppeng",
-            "Sorong",
             "Sorong",
             "Sorong Selatan",
             "Sragen",
             "Subang",
             "Subulussalam",
-            "Sukabumi",
             "Sukabumi",
             "Sukamara",
             "Sukoharjo",
@@ -667,7 +645,6 @@
             "Tanah Datar",
             "Tanah Laut",
             "Tangerang",
-            "Tangerang",
             "Tangerang Selatan",
             "Tanggamus",
             "Tanjung Balai",
@@ -680,10 +657,8 @@
             "Tapin",
             "Tarakan",
             "Tasikmalaya",
-            "Tasikmalaya",
             "Tebing Tinggi",
             "Tebo",
-            "Tegal",
             "Tegal",
             "Teluk Bintuni",
             "Teluk Wondama",
@@ -713,7 +688,7 @@
             "Yahukimo",
             "Yalimo",
             "Yogyakarta"});
-            this.cbRegion.Location = new System.Drawing.Point(361, 64);
+            this.cbRegion.Location = new System.Drawing.Point(361, 101);
             this.cbRegion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbRegion.Name = "cbRegion";
             this.cbRegion.Size = new System.Drawing.Size(275, 28);
@@ -726,7 +701,7 @@
             this.cbRhesus.Items.AddRange(new object[] {
             "+",
             "-"});
-            this.cbRhesus.Location = new System.Drawing.Point(25, 181);
+            this.cbRhesus.Location = new System.Drawing.Point(25, 218);
             this.cbRhesus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbRhesus.Name = "cbRhesus";
             this.cbRhesus.Size = new System.Drawing.Size(275, 28);
@@ -743,7 +718,7 @@
             this.btnCancel.FillColor2 = System.Drawing.Color.IndianRed;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(25, 437);
+            this.btnCancel.Location = new System.Drawing.Point(25, 459);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(187, 51);
@@ -761,7 +736,7 @@
             this.btnSubmit.FillColor2 = System.Drawing.Color.IndianRed;
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(451, 437);
+            this.btnSubmit.Location = new System.Drawing.Point(451, 459);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(187, 51);
@@ -805,7 +780,7 @@
             // 
             this.tbBagQuantity.BackColor = System.Drawing.Color.Transparent;
             this.tbBagQuantity.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbBagQuantity.Location = new System.Drawing.Point(25, 275);
+            this.tbBagQuantity.Location = new System.Drawing.Point(25, 312);
             this.tbBagQuantity.Name = "tbBagQuantity";
             this.tbBagQuantity.Size = new System.Drawing.Size(275, 28);
             this.tbBagQuantity.TabIndex = 24;
@@ -815,12 +790,24 @@
             0,
             0});
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(168, 28);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(337, 30);
+            this.guna2HtmlLabel1.TabIndex = 25;
+            this.guna2HtmlLabel1.Text = "Formulir Permohonan Donor Darah";
+            // 
             // FormPermohonan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(685, 548);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.tbBagQuantity);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnCancel);
@@ -881,5 +868,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse8;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse9;
         private Guna.UI2.WinForms.Guna2NumericUpDown tbBagQuantity;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
