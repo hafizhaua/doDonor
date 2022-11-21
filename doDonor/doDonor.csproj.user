@@ -4,6 +4,9 @@
     <Compile Update="FormBeranda.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormCariJadwal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -36,6 +39,9 @@
     </Compile>
     <Compile Update="ListJadwal.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Models\FormHomepage.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>

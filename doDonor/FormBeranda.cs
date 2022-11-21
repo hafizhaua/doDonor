@@ -87,5 +87,16 @@ namespace doDonor
         {
 
         }
+
+        private void btnBeranda_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            FormHomepage formHomepage = new FormHomepage(this);
+            formHomepage.TopLevel = false;
+            panel2.Controls.Add(formHomepage);
+            formHomepage.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            formHomepage.Dock = DockStyle.Fill;
+            formHomepage.Show();
+        }
     }
 }
