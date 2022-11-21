@@ -105,7 +105,7 @@ namespace doDonor.Models
         {
             bloodType = bloodType == "Semua" ? "true" : "_blood_type = '" + bloodType + "'";
             region = region == "Semua" ? "true" : "_region = '" + region + "'";
-            name = name == "" ? "true" : "_patient_name LIKE '%" + name + "%'";
+            name = name == "" ? "true" : "_patient_name ILIKE '%" + name + "%'";
 
             string cond = $"{bloodType} and {region} and {name};";
 

@@ -8,13 +8,13 @@ namespace doDonor.Models
 {
     internal class Schedule
     {
-        private int idSchedule;
+        private string? idSchedule;
         private string? region;
         private DateTime dateEvent;
         private string? location;
         private string? address;
 
-        public Schedule(int idSchedule, string? region, DateTime dateEvent, string? location, string? address)
+        public Schedule(string idSchedule, string? region, DateTime dateEvent, string? location, string? address)
         {
             IdSchedule = idSchedule;
             Region = region;
@@ -23,7 +23,15 @@ namespace doDonor.Models
             Address = address;
         }
 
-        public int IdSchedule { get => idSchedule; set => idSchedule = value; }
+        public Schedule(string? region, DateTime dateEvent, string? location, string? address)
+        {
+            Region = region;
+            DateEvent = dateEvent;
+            Location = location;
+            Address = address;
+        }
+
+        public string? IdSchedule { get => idSchedule; set => idSchedule = value; }
         public string? Region { get => region; set => region = value; }
         public DateTime DateEvent { get => dateEvent; set => dateEvent = value; }
         public string? Location { get => location; set => location = value; }

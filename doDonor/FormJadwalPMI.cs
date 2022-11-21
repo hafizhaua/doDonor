@@ -14,27 +14,36 @@ namespace doDonor
 {
     public partial class FormJadwalPMI : Form
     {
-       
-        public FormJadwalPMI()
+        private string? region;
+        public FormJadwalPMI(string reg)
         {
+            region = reg;
             InitializeComponent();
         }
 
         private void FormJadwalPMI_Load(object sender, EventArgs e)
         {
-            DbSchedule dbSchedule = new DbSchedule();
-            populateItems(dbSchedule);
+            lblRegion.Text = region;
+            populateItems();
+            if (region == "Semua" || FormLogin.isAdmin)
+            {
+                btnAddSchedule.Enabled = false;
+                btnAddSchedule.Visible = false;
+            }
+            
         }
 
-        private void populateItems(DbSchedule dbSchedule)
+        private void populateItems()
         {
-            List<Schedule> listSchedule = dbSchedule.ReadSchedule();
+            DbSchedule dbSchedule = new DbSchedule();
+            List<Schedule> listSchedule = dbSchedule.ReadSchedule(region);
 
             ListJadwal[] listJadwal = new ListJadwal[listSchedule.Count];
             int i = 0;
             foreach(Schedule schedule in listSchedule) 
             {
                 listJadwal[i] = new ListJadwal();
+                listJadwal[i].id = schedule.IdSchedule;
                 listJadwal[i].PMI = schedule.Region;
                 listJadwal[i].lokasiPMI = schedule.Location;
                 listJadwal[i].waktuJadwal = schedule.DateEvent;
@@ -42,8 +51,21 @@ namespace doDonor
                 scrollPanel.Controls.Add(listJadwal[i]);
                 i++;
             }
+        }
 
+        private void btnAddSchedule_Click(object sender, EventArgs e)
+        {
+            if (FormLogin.isAdmin)
+            {
+                FormTambahJadwal frm = new FormTambahJadwal(region);
+                frm.Show();
+            }
+        }
 
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            scrollPanel.Controls.Clear();
+            populateItems();
         }
     }
 }
