@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -55,27 +55,6 @@
             this.panel1.Size = new System.Drawing.Size(428, 414);
             this.panel1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(110, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 52);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "doDonor";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::doDonor.Properties.Resources._6262_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(110, 159);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 242);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // guna2CircleButton1
             // 
             this.guna2CircleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
@@ -93,6 +72,27 @@
             this.guna2CircleButton1.TabIndex = 1;
             this.guna2CircleButton1.Text = "x";
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(131, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 60);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "doDonor";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::doDonor.Properties.Resources._6262_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(77, 159);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(305, 242);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // guna2Elipse1
             // 

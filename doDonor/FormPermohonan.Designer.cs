@@ -45,7 +45,6 @@
             this.cbDonorType = new System.Windows.Forms.ComboBox();
             this.cbRegion = new System.Windows.Forms.ComboBox();
             this.cbRhesus = new System.Windows.Forms.ComboBox();
-            this.btnCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -707,24 +706,6 @@
             this.cbRhesus.Size = new System.Drawing.Size(275, 28);
             this.cbRhesus.TabIndex = 19;
             // 
-            // btnCancel
-            // 
-            this.btnCancel.BorderRadius = 15;
-            this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCancel.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor2 = System.Drawing.Color.IndianRed;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(25, 459);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(187, 51);
-            this.btnCancel.TabIndex = 22;
-            this.btnCancel.Text = "BATALKAN";
-            // 
             // btnSubmit
             // 
             this.btnSubmit.BorderRadius = 15;
@@ -736,12 +717,12 @@
             this.btnSubmit.FillColor2 = System.Drawing.Color.IndianRed;
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(451, 459);
+            this.btnSubmit.Location = new System.Drawing.Point(244, 464);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(187, 51);
             this.btnSubmit.TabIndex = 23;
-            this.btnSubmit.Text = "KIRIM";
+            this.btnSubmit.Text = "Kirim";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // guna2Elipse1
@@ -810,7 +791,6 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.tbBagQuantity);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cbRhesus);
             this.Controls.Add(this.cbRegion);
             this.Controls.Add(this.cbDonorType);
@@ -856,7 +836,6 @@
         private ComboBox cbDonorType;
         private ComboBox cbRegion;
         private ComboBox cbRhesus;
-        private Guna.UI2.WinForms.Guna2GradientButton btnCancel;
         private Guna.UI2.WinForms.Guna2GradientButton btnSubmit;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;

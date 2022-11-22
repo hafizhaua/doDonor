@@ -12,7 +12,7 @@ namespace doDonor.Models
         {
             if (string.IsNullOrEmpty(value))
             {
-                throw new ArgumentException("Pastikan semua data telah terisi.");
+                //throw new ArgumentException("Pastikan semua data telah terisi.");
                 return null;
             }
             return value;
@@ -22,7 +22,7 @@ namespace doDonor.Models
         {
             if (value <= 0)
             {
-                throw new ArgumentException("Masukkan data numeris dengan benar.");
+                //throw new ArgumentException("Masukkan data numeris dengan benar.");
             }
             return value;
         }

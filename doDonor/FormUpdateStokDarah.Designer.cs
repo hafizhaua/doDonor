@@ -326,12 +326,13 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(372, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(158, 17);
             this.label1.TabIndex = 103;
-            this.label1.Text = "UTD PMI";
+            this.label1.Text = "Kota/Kabupaten UTD PMI";
             // 
             // cbRegion
             // 
+            this.cbRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRegion.FormattingEnabled = true;
             this.cbRegion.Items.AddRange(new object[] {
             "Aceh Barat",
@@ -827,7 +828,6 @@
             this.cbRegion.Name = "cbRegion";
             this.cbRegion.Size = new System.Drawing.Size(252, 28);
             this.cbRegion.TabIndex = 104;
-            this.cbRegion.Text = "Kota/Kabupaten";
             // 
             // FormUpdateStokDarah
             // 

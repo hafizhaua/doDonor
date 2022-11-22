@@ -11,7 +11,7 @@ namespace doDonor.Models
     internal class DbUser
     {
         private NpgsqlConnection conn;
-        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=dodonor";
+        private string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=dodonor";
         private static NpgsqlCommand cmd;
         private string sql = null;
 

@@ -55,6 +55,7 @@
             // 
             // cbRegion
             // 
+            this.cbRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRegion.FormattingEnabled = true;
             this.cbRegion.Items.AddRange(new object[] {
             "Semua",
@@ -551,7 +552,6 @@
             this.cbRegion.Name = "cbRegion";
             this.cbRegion.Size = new System.Drawing.Size(381, 28);
             this.cbRegion.TabIndex = 30;
-            this.cbRegion.Text = "Semua";
             // 
             // label1
             // 

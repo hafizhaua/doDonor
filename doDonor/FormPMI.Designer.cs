@@ -59,10 +59,12 @@
             this.lblTcAb = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblWbAb = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddStock = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbRegion
             // 
+            this.cbRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRegion.FormattingEnabled = true;
             this.cbRegion.Items.AddRange(new object[] {
             "Aceh Barat",
@@ -553,19 +555,18 @@
             "Yahukimo",
             "Yalimo",
             "Yogyakarta"});
-            this.cbRegion.Location = new System.Drawing.Point(70, 87);
+            this.cbRegion.Location = new System.Drawing.Point(52, 99);
             this.cbRegion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbRegion.Name = "cbRegion";
-            this.cbRegion.Size = new System.Drawing.Size(252, 28);
+            this.cbRegion.Size = new System.Drawing.Size(270, 28);
             this.cbRegion.TabIndex = 4;
-            this.cbRegion.Text = "Kota/Kabupaten";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(280, 37);
+            this.label1.Location = new System.Drawing.Point(270, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 28);
             this.label1.TabIndex = 3;
@@ -582,7 +583,7 @@
             this.btnSearch.FillColor2 = System.Drawing.Color.IndianRed;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(365, 87);
+            this.btnSearch.Location = new System.Drawing.Point(364, 99);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(253, 28);
@@ -599,7 +600,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(332, 221);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(332, 232);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(31, 30);
             this.guna2HtmlLabel1.TabIndex = 26;
@@ -610,7 +611,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(406, 221);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(406, 232);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(30, 30);
             this.guna2HtmlLabel2.TabIndex = 27;
@@ -621,7 +622,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(486, 221);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(486, 232);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(44, 30);
             this.guna2HtmlLabel3.TabIndex = 28;
@@ -632,7 +633,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(585, 221);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(585, 232);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(32, 30);
             this.guna2HtmlLabel4.TabIndex = 29;
@@ -643,7 +644,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(54, 221);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(54, 232);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(211, 30);
             this.guna2HtmlLabel5.TabIndex = 30;
@@ -654,7 +655,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(54, 270);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(54, 281);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(36, 30);
             this.guna2HtmlLabel6.TabIndex = 31;
@@ -665,7 +666,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(54, 328);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(54, 339);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(27, 30);
             this.guna2HtmlLabel7.TabIndex = 32;
@@ -676,7 +677,7 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(54, 382);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(54, 393);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(40, 30);
             this.guna2HtmlLabel8.TabIndex = 33;
@@ -688,18 +689,19 @@
             this.lblPMI.AutoSize = true;
             this.lblPMI.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPMI.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblPMI.Location = new System.Drawing.Point(252, 140);
+            this.lblPMI.Location = new System.Drawing.Point(252, 151);
             this.lblPMI.Name = "lblPMI";
             this.lblPMI.Size = new System.Drawing.Size(198, 28);
             this.lblPMI.TabIndex = 34;
             this.lblPMI.Text = "Stok Darah UTD PMI";
+            this.lblPMI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(54, 451);
+            this.label3.Location = new System.Drawing.Point(54, 462);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(286, 17);
             this.label3.TabIndex = 35;
@@ -710,7 +712,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(54, 471);
+            this.label4.Location = new System.Drawing.Point(54, 482);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(320, 17);
             this.label4.TabIndex = 36;
@@ -721,7 +723,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(52, 191);
+            this.label5.Location = new System.Drawing.Point(52, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 17);
             this.label5.TabIndex = 37;
@@ -732,7 +734,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDate.ForeColor = System.Drawing.Color.Snow;
-            this.lblDate.Location = new System.Drawing.Point(168, 191);
+            this.lblDate.Location = new System.Drawing.Point(168, 202);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(13, 17);
             this.lblDate.TabIndex = 38;
@@ -743,7 +745,7 @@
             this.lblPrcA.BackColor = System.Drawing.Color.Transparent;
             this.lblPrcA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrcA.ForeColor = System.Drawing.Color.Gold;
-            this.lblPrcA.Location = new System.Drawing.Point(332, 382);
+            this.lblPrcA.Location = new System.Drawing.Point(332, 393);
             this.lblPrcA.Name = "lblPrcA";
             this.lblPrcA.Size = new System.Drawing.Size(15, 30);
             this.lblPrcA.TabIndex = 41;
@@ -754,7 +756,7 @@
             this.lblTcA.BackColor = System.Drawing.Color.Transparent;
             this.lblTcA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTcA.ForeColor = System.Drawing.Color.Gold;
-            this.lblTcA.Location = new System.Drawing.Point(332, 328);
+            this.lblTcA.Location = new System.Drawing.Point(332, 339);
             this.lblTcA.Name = "lblTcA";
             this.lblTcA.Size = new System.Drawing.Size(15, 30);
             this.lblTcA.TabIndex = 40;
@@ -765,7 +767,7 @@
             this.lblWbA.BackColor = System.Drawing.Color.Transparent;
             this.lblWbA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblWbA.ForeColor = System.Drawing.Color.Gold;
-            this.lblWbA.Location = new System.Drawing.Point(332, 270);
+            this.lblWbA.Location = new System.Drawing.Point(332, 281);
             this.lblWbA.Name = "lblWbA";
             this.lblWbA.Size = new System.Drawing.Size(15, 30);
             this.lblWbA.TabIndex = 39;
@@ -776,7 +778,7 @@
             this.lblPrcB.BackColor = System.Drawing.Color.Transparent;
             this.lblPrcB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrcB.ForeColor = System.Drawing.Color.Gold;
-            this.lblPrcB.Location = new System.Drawing.Point(406, 382);
+            this.lblPrcB.Location = new System.Drawing.Point(406, 393);
             this.lblPrcB.Name = "lblPrcB";
             this.lblPrcB.Size = new System.Drawing.Size(15, 30);
             this.lblPrcB.TabIndex = 44;
@@ -787,7 +789,7 @@
             this.lblTcB.BackColor = System.Drawing.Color.Transparent;
             this.lblTcB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTcB.ForeColor = System.Drawing.Color.Gold;
-            this.lblTcB.Location = new System.Drawing.Point(406, 328);
+            this.lblTcB.Location = new System.Drawing.Point(406, 339);
             this.lblTcB.Name = "lblTcB";
             this.lblTcB.Size = new System.Drawing.Size(15, 30);
             this.lblTcB.TabIndex = 43;
@@ -798,7 +800,7 @@
             this.lblWbB.BackColor = System.Drawing.Color.Transparent;
             this.lblWbB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblWbB.ForeColor = System.Drawing.Color.Gold;
-            this.lblWbB.Location = new System.Drawing.Point(406, 270);
+            this.lblWbB.Location = new System.Drawing.Point(406, 281);
             this.lblWbB.Name = "lblWbB";
             this.lblWbB.Size = new System.Drawing.Size(15, 30);
             this.lblWbB.TabIndex = 42;
@@ -809,7 +811,7 @@
             this.lblPrcO.BackColor = System.Drawing.Color.Transparent;
             this.lblPrcO.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrcO.ForeColor = System.Drawing.Color.Gold;
-            this.lblPrcO.Location = new System.Drawing.Point(585, 382);
+            this.lblPrcO.Location = new System.Drawing.Point(585, 393);
             this.lblPrcO.Name = "lblPrcO";
             this.lblPrcO.Size = new System.Drawing.Size(15, 30);
             this.lblPrcO.TabIndex = 50;
@@ -820,7 +822,7 @@
             this.lblTcO.BackColor = System.Drawing.Color.Transparent;
             this.lblTcO.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTcO.ForeColor = System.Drawing.Color.Gold;
-            this.lblTcO.Location = new System.Drawing.Point(585, 328);
+            this.lblTcO.Location = new System.Drawing.Point(585, 339);
             this.lblTcO.Name = "lblTcO";
             this.lblTcO.Size = new System.Drawing.Size(15, 30);
             this.lblTcO.TabIndex = 49;
@@ -831,7 +833,7 @@
             this.lblWbO.BackColor = System.Drawing.Color.Transparent;
             this.lblWbO.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblWbO.ForeColor = System.Drawing.Color.Gold;
-            this.lblWbO.Location = new System.Drawing.Point(585, 270);
+            this.lblWbO.Location = new System.Drawing.Point(585, 281);
             this.lblWbO.Name = "lblWbO";
             this.lblWbO.Size = new System.Drawing.Size(15, 30);
             this.lblWbO.TabIndex = 48;
@@ -842,7 +844,7 @@
             this.lblPrcAb.BackColor = System.Drawing.Color.Transparent;
             this.lblPrcAb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrcAb.ForeColor = System.Drawing.Color.Gold;
-            this.lblPrcAb.Location = new System.Drawing.Point(486, 382);
+            this.lblPrcAb.Location = new System.Drawing.Point(486, 393);
             this.lblPrcAb.Name = "lblPrcAb";
             this.lblPrcAb.Size = new System.Drawing.Size(15, 30);
             this.lblPrcAb.TabIndex = 47;
@@ -853,7 +855,7 @@
             this.lblTcAb.BackColor = System.Drawing.Color.Transparent;
             this.lblTcAb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTcAb.ForeColor = System.Drawing.Color.Gold;
-            this.lblTcAb.Location = new System.Drawing.Point(486, 328);
+            this.lblTcAb.Location = new System.Drawing.Point(486, 339);
             this.lblTcAb.Name = "lblTcAb";
             this.lblTcAb.Size = new System.Drawing.Size(15, 30);
             this.lblTcAb.TabIndex = 46;
@@ -864,7 +866,7 @@
             this.lblWbAb.BackColor = System.Drawing.Color.Transparent;
             this.lblWbAb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblWbAb.ForeColor = System.Drawing.Color.Gold;
-            this.lblWbAb.Location = new System.Drawing.Point(486, 270);
+            this.lblWbAb.Location = new System.Drawing.Point(486, 281);
             this.lblWbAb.Name = "lblWbAb";
             this.lblWbAb.Size = new System.Drawing.Size(15, 30);
             this.lblWbAb.TabIndex = 45;
@@ -881,7 +883,7 @@
             this.btnAddStock.FillColor2 = System.Drawing.Color.IndianRed;
             this.btnAddStock.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddStock.ForeColor = System.Drawing.Color.White;
-            this.btnAddStock.Location = new System.Drawing.Point(461, 445);
+            this.btnAddStock.Location = new System.Drawing.Point(461, 456);
             this.btnAddStock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddStock.Name = "btnAddStock";
             this.btnAddStock.Size = new System.Drawing.Size(156, 48);
@@ -889,12 +891,24 @@
             this.btnAddStock.Text = "Perbarui Data";
             this.btnAddStock.Click += new System.EventHandler(this.btnAddStock_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(52, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 25);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Kota/Kabupaten";
+            // 
             // FormPMI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(685, 548);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAddStock);
             this.Controls.Add(this.lblPrcO);
             this.Controls.Add(this.lblTcO);
@@ -964,5 +978,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTcAb;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblWbAb;
         private Guna.UI2.WinForms.Guna2GradientButton btnAddStock;
+        private Label label2;
     }
 }

@@ -19,8 +19,14 @@ namespace doDonor
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            FormJadwalPMI frm = new FormJadwalPMI(cbRegion.Text);
-            frm.Show();
+            if(cbRegion.Text != "")
+            {
+                FormJadwalPMI frm = new FormJadwalPMI(cbRegion.Text);
+                frm.Show();
+            } else
+            {
+                MessageBox.Show("Pastikan wilayah telah dipilih.");
+            }
         }
     }
 }
