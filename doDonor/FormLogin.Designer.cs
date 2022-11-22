@@ -40,10 +40,9 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(43, 263);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbPassword.Location = new System.Drawing.Point(38, 197);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(247, 27);
+            this.tbPassword.Size = new System.Drawing.Size(217, 23);
             this.tbPassword.TabIndex = 7;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
@@ -58,20 +57,18 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.IndianRed;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(43, 316);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(38, 237);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(247, 37);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(216, 28);
             this.guna2GradientButton1.TabIndex = 8;
             this.guna2GradientButton1.Text = "Login";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // tbUname
             // 
-            this.tbUname.Location = new System.Drawing.Point(43, 176);
-            this.tbUname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbUname.Location = new System.Drawing.Point(38, 132);
             this.tbUname.Name = "tbUname";
-            this.tbUname.Size = new System.Drawing.Size(247, 27);
+            this.tbUname.Size = new System.Drawing.Size(217, 23);
             this.tbUname.TabIndex = 9;
             // 
             // guna2HtmlLabel1
@@ -79,10 +76,9 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 143);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(38, 107);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 22);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(60, 17);
             this.guna2HtmlLabel1.TabIndex = 10;
             this.guna2HtmlLabel1.Text = "Username";
             // 
@@ -91,10 +87,9 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(43, 228);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(38, 171);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(70, 22);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(55, 17);
             this.guna2HtmlLabel2.TabIndex = 11;
             this.guna2HtmlLabel2.Text = "Password";
             // 
@@ -108,16 +103,15 @@
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(351, 499);
+            this.ClientSize = new System.Drawing.Size(307, 374);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.tbUname);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.tbPassword);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormLogin";
             this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
