@@ -47,6 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.guna2CircleButton1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(357, -2);
@@ -57,11 +58,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Futura Md BT", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(110, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 42);
+            this.label1.Size = new System.Drawing.Size(196, 52);
             this.label1.TabIndex = 3;
             this.label1.Text = "doDonor";
             // 
@@ -77,7 +78,7 @@
             // 
             // guna2CircleButton1
             // 
-            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -85,10 +86,10 @@
             this.guna2CircleButton1.FillColor = System.Drawing.Color.IndianRed;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(744, 12);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(375, 14);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(28, 28);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(35, 35);
             this.guna2CircleButton1.TabIndex = 1;
             this.guna2CircleButton1.Text = "x";
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
@@ -157,10 +158,9 @@
             // 
             // FormUtama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 411);
-            this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
