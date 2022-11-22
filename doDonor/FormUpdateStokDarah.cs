@@ -42,7 +42,7 @@ namespace doDonor
             int status = dbStock.Create(stock);
             if (status == 1)
             {
-                MessageBox.Show("Permintaan donor darah Anda berhasil dikirimkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Informasi stok darah berhasil dikirimkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
             else

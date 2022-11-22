@@ -16,16 +16,64 @@ namespace doDonor.Models
         private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=dodonor";
         private static NpgsqlCommand cmd;
         private string sql = null;
-        
 
-       
-        public List<Schedule> ReadSchedule()
+
+        public int Create(Schedule sch)
         {
             conn = new NpgsqlConnection(connstring);
             try
             {
                 conn.Open();
-                sql = @"select * from schedule_select()";
+                sql = @"select * from schedule_insert(:_region, :_date_event, :_location, :_address)";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.Parameters.AddWithValue("_region", sch.Region);
+                cmd.Parameters.Add(new NpgsqlParameter("_date_event", NpgsqlTypes.NpgsqlDbType.Date)).Value = sch.DateEvent;
+                cmd.Parameters.AddWithValue("_location", sch.Location);
+                cmd.Parameters.AddWithValue("_address", sch.Address);
+
+                int status = (int)cmd.ExecuteScalar();
+                conn.Close();
+                return status;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Data gagal dikirimkan.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Close();
+                return 0;
+            }
+        }
+
+        public int Delete(string reqId)
+        {
+            conn = new NpgsqlConnection(connstring);
+            try
+            {
+                conn.Open();
+                sql = @"select * from schedule_delete(:_id)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_id", reqId);
+
+                int status = (int)cmd.ExecuteScalar();
+                conn.Close();
+                return status;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Data gagal dihapus.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Close();
+                return 0;
+            }
+        }
+
+        public List<Schedule> ReadSchedule(string region)
+        {
+            conn = new NpgsqlConnection(connstring);
+            try
+            {
+                string cond = region == "Semua" ? "true" : $"_region = '{region}'";
+                conn.Open();
+                sql = @"select * from schedule_select() where " + cond;
                 cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader rd = cmd.ExecuteReader();
 
@@ -34,11 +82,12 @@ namespace doDonor.Models
                 while (rd.Read())
                 {
                     Schedule sch = new Schedule(
-                    Convert.ToInt32(rd["idSchedule"]),
-                    rd["region"].ToString(),
-                    Convert.ToDateTime(rd["dateEvent"]),
-                    rd["location"].ToString(),
-                    rd["address"].ToString());
+                        rd["_id"].ToString(),
+                        rd["_region"].ToString(),
+                        Convert.ToDateTime(rd["_date_event"]),
+                        rd["_location"].ToString(),
+                        rd["_address"].ToString()
+                    );
 
                     sch_list.Add(sch);
                 }

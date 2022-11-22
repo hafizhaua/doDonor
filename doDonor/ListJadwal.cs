@@ -1,4 +1,5 @@
-﻿using System;
+﻿using doDonor.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,7 @@ namespace doDonor
         private string _PMI;
         private string _lokasiPMI;
         private DateTime _waktuJadwal;
-        private Image _gambar;
+        private string _id;
 
         [Category("Custom Props")]
         public  string PMI
@@ -37,18 +38,45 @@ namespace doDonor
         }
 
         [Category("Custom Props")]
+        public string id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+
+        [Category("Custom Props")]
         public DateTime waktuJadwal { 
             get { return _waktuJadwal; }
             set { _waktuJadwal = value; lblTanggal.Text = value.ToString(); }
         }
 
-        [Category("Custom Props")]
-        public Image gambar
+        private void ListJadwal_Load(object sender, EventArgs e)
         {
-            get => _gambar;
-            set { _gambar = value; pictureBox1.Image = value; }
+            if(!FormLogin.isAdmin)
+            {
+                btnDelete.Visible = false;
+                btnDelete.Enabled = false;
+            }
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Boolean isConfirmedDelete = MessageBox.Show("Apakah Anda yakin akan menghapus data ini?", "Data berhasil dihapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes;
 
+            if (isConfirmedDelete)
+            {
+                DbSchedule dbReq = new DbSchedule();
+                int status = dbReq.Delete(id);
+                if (status == 1)
+                {
+                    MessageBox.Show("Data permohonan donor darah berhasil dihapus. Silakan refresh data.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Data gagal dihapus.", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
