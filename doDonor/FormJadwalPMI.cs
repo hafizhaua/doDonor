@@ -25,10 +25,15 @@ namespace doDonor
         {
             lblRegion.Text = region;
             populateItems();
-            if (region == "Semua" || FormLogin.isAdmin)
+            if (region == "Semua" || !FormLogin.isAdmin)
             {
                 btnAddSchedule.Enabled = false;
                 btnAddSchedule.Visible = false;
+            }
+            else
+            {
+                btnAddSchedule.Enabled = true;
+                btnAddSchedule.Visible = true;
             }
             
         }
