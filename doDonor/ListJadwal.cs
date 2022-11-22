@@ -53,10 +53,10 @@ namespace doDonor
 
         private void ListJadwal_Load(object sender, EventArgs e)
         {
-            if(!FormLogin.isAdmin)
+            if(FormLogin.isAdmin)
             {
-                btnDelete.Visible = false;
-                btnDelete.Enabled = false;
+                btnDelete.Visible = true;
+                btnDelete.Enabled = true;
             }
         }
 
@@ -76,6 +76,20 @@ namespace doDonor
                 {
                     MessageBox.Show("Data gagal dihapus.", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void ListJadwal_Load_1(object sender, EventArgs e)
+        {
+            if (FormLogin.isAdmin)
+            {
+                btnDelete.Visible = true;
+                btnDelete.Enabled = true;
+            }
+            else
+            {
+                btnDelete.Visible = false;
+                btnDelete.Enabled = false;
             }
         }
     }

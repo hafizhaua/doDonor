@@ -88,6 +88,7 @@
             this.btnDelete.Size = new System.Drawing.Size(131, 39);
             this.btnDelete.TabIndex = 49;
             this.btnDelete.Text = "Hapus Data";
+            this.btnDelete.Visible = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // ListJadwal
@@ -102,6 +103,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListJadwal";
             this.Size = new System.Drawing.Size(243, 188);
+            this.Load += new System.EventHandler(this.ListJadwal_Load_1);
             this.ResumeLayout(false);
 
         }

@@ -7,6 +7,13 @@ namespace doDonor
             InitializeComponent();
             if (!FormLogin.isAdmin)
                 btnLogout.Text = "Login";
+
+            FormHomepage formHomepage = new FormHomepage(this);
+            formHomepage.TopLevel = false;
+            panel2.Controls.Add(formHomepage);
+            formHomepage.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            formHomepage.Dock = DockStyle.Fill;
+            formHomepage.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -57,10 +64,10 @@ namespace doDonor
         {
             panel2.Controls.Clear();
             FormCariJadwal formCariJadwal = new FormCariJadwal();
-            //formJadwalPMI.TopLevel = false;
-            //panel2.Controls.Add(formJadwalPMI);
-            //formJadwalPMI.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            //formJadwalPMI.Dock = DockStyle.Fill;
+            formCariJadwal.TopLevel = false;
+            panel2.Controls.Add(formCariJadwal);
+            formCariJadwal.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            formCariJadwal.Dock = DockStyle.Fill;
             formCariJadwal.Show();
         }
 
