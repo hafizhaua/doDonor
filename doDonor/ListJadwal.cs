@@ -22,6 +22,7 @@ namespace doDonor
         private string _lokasiPMI;
         private DateTime _waktuJadwal;
         private string _id;
+        private string _alamat;
 
         [Category("Custom Props")]
         public  string PMI
@@ -48,7 +49,14 @@ namespace doDonor
         [Category("Custom Props")]
         public DateTime waktuJadwal { 
             get { return _waktuJadwal; }
-            set { _waktuJadwal = value; lblTanggal.Text = value.ToString(); }
+            set { _waktuJadwal = value; lblTanggal.Text = value.ToString("dd MMMM yyyy"); }
+        }
+
+        [Category("Custom Props")]
+        public string alamat
+        {
+            get { return _alamat; }
+            set { _alamat = value; lblAlamat.Text = value.ToString(); }
         }
 
         private void ListJadwal_Load(object sender, EventArgs e)

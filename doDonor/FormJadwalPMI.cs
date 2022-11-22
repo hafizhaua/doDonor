@@ -47,6 +47,7 @@ namespace doDonor
                 listJadwal[i].PMI = schedule.Region;
                 listJadwal[i].lokasiPMI = schedule.Location;
                 listJadwal[i].waktuJadwal = schedule.DateEvent;
+                listJadwal[i].alamat = schedule.Address;
 
                 scrollPanel.Controls.Add(listJadwal[i]);
                 i++;
