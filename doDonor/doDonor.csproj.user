@@ -40,8 +40,5 @@
     <Compile Update="ListJadwal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Models\FormHomepage.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

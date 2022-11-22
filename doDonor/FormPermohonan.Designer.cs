@@ -762,6 +762,11 @@
             this.tbBagQuantity.BackColor = System.Drawing.Color.Transparent;
             this.tbBagQuantity.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbBagQuantity.Location = new System.Drawing.Point(25, 312);
+            this.tbBagQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.tbBagQuantity.Name = "tbBagQuantity";
             this.tbBagQuantity.Size = new System.Drawing.Size(275, 28);
             this.tbBagQuantity.TabIndex = 24;
